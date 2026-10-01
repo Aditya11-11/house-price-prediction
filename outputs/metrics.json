@@ -1,0 +1,55 @@
+{
+  "selected_model": "Ridge",
+  "n_train": 1166,
+  "n_test": 292,
+  "n_features_after_encoding": 269,
+  "lasso_zeroed_features": 161,
+  "lasso_top_features": {
+    "QualxArea": 0.0841,
+    "TotalSF": 0.0794,
+    "Exterior1st_BrkFace": 0.0783,
+    "Neighborhood_StoneBr": 0.0781,
+    "Neighborhood_Crawfor": 0.0756,
+    "MSZoning_infrequent_sklearn": -0.0748,
+    "Functional_Typ": 0.0713,
+    "Functional_infrequent_sklearn": -0.0649,
+    "SaleCondition_Abnorml": -0.0579,
+    "OverallCond": 0.0474
+  },
+  "models": {
+    "Baseline (median)": {
+      "cv_rmse_log_mean": 0.3911,
+      "cv_rmse_log_std": 0.0111,
+      "rmse_log": 0.4323,
+      "rmse_dollars": 88667.0,
+      "mae_dollars": 59568.0,
+      "r2": -0.0014
+    },
+    "Linear Regression": {
+      "cv_rmse_log_mean": 0.1225,
+      "cv_rmse_log_std": 0.008,
+      "rmse_log": 0.1194,
+      "rmse_dollars": 21357.0,
+      "mae_dollars": 14047.0,
+      "r2": 0.9236
+    },
+    "Ridge": {
+      "cv_rmse_log_mean": 0.1092,
+      "cv_rmse_log_std": 0.0057,
+      "rmse_log": 0.1257,
+      "rmse_dollars": 21696.0,
+      "mae_dollars": 14067.0,
+      "r2": 0.9154,
+      "alpha": 28.68316813342015
+    },
+    "Lasso": {
+      "cv_rmse_log_mean": 0.1094,
+      "cv_rmse_log_std": 0.0049,
+      "rmse_log": 0.1234,
+      "rmse_dollars": 21592.0,
+      "mae_dollars": 13832.0,
+      "r2": 0.9184,
+      "alpha": 0.0005541020330009492
+    }
+  }
+}
